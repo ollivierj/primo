@@ -11,7 +11,7 @@ const htmlPromiseWorker = new PromiseWorker(new svelteWorker());
 
 const componentsMap = new Map();
 
-export async function html({ component, buildStatic = true, format = 'esm'}) {
+export async function html({ component, buildStatic = false, format = 'esm'}) {
 
   // return {
   //   error: 'none'

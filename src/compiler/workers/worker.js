@@ -18,7 +18,7 @@ async function fetch_package(url) {
     }
 }
 
-registerPromiseWorker(async function ({ component, hydrated, buildStatic = true, format = 'esm' }) {
+registerPromiseWorker(async function ({ component, hydrated, buildStatic = false, format = 'esm' }) {
 
     const final = {
         ssr: '',
